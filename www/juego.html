@@ -1,0 +1,275 @@
+<<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+<div class="page" data-name="juego">
+    
+    <div class="page-content fondo">
+       
+        <div class="popup my-popup">
+            <div class="view">
+                <div class="page">
+                    <div class="navbar">
+                        <div class="navbar-bg"></div>
+                        <div class="navbar-inner">
+                            <div class="title"></div>
+                            <div class="right">
+                               
+                                <a class="link popup-close total" id="btnCerrar">Cerrar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="page-content"> 
+                        <div class="block-title">Dados</div>
+                        <div class="block-header">Seleccione cuantas veces se repite el dado</div>
+                        <div class="list">
+                            <form name="seleccion">
+                                <ul>
+                                     <li>
+                                        <label class="item-radio item-radio-icon-end item-content">
+                                            <input type="radio" class="dado" name="opcion" value="-" id="vacio" checked />
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">Vacío</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="item-radio item-radio-icon-end item-content">
+                                            <input type="radio"  class="dado" name="opcion" value="1" id="d1_1"/>
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">Uno (1)</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="item-radio item-radio-icon-end item-content">
+                                            <input type="radio"  class="dado" name="opcion" value="2" id="d1_2" />
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">Dos (2)</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="item-radio item-radio-icon-end item-content">
+                                            <input type="radio"  class="dado" name="opcion" value="3" id="d1_3" />
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">Tres (3)</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="item-radio item-radio-icon-end item-content">
+                                            <input type="radio"  class="dado" name="opcion" value="4" id="d1_4" />
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">Cuatro (4)</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="item-radio item-radio-icon-end item-content">
+                                            <input type="radio"  class="dado" name="opcion" value="5" id="d1_5" />
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">Cinco (5)</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    
+                                    <li>
+                                        <label class="item-radio item-radio-icon-end item-content">
+                                            <input type="radio"  class="dado" name="opcion" value="X" id="d1_6" />
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">Tachar</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup my-popup2">
+            <div class="view">
+                <div class="page">
+                    <div class="navbar">
+                        <div class="navbar-bg"></div>
+                        <div class="navbar-inner">
+                            <div class="title"></div>
+                            <div class="right">
+                                <a class="link popup-close total" id="btnCerrar2">Cerrar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="block-title">Categorías</div>
+                        <div class="block-header">Seleccione la opción que desee</div>
+                        <div class="list">
+                            <form name="seleccion2">
+                                <ul>
+                                    <li>
+                                        <label class="item-radio item-radio-icon-end item-content">
+                                            <input type="radio" class="jugada" name="opcion2" value="-" id="vacio2" checked />
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">Vacío</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="item-radio item-radio-icon-end item-content">
+                                            <input type="radio" class="jugada" name="opcion2" value="5" id="servida"/>
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">Servida</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="item-radio item-radio-icon-end item-content">
+                                            <input type="radio" class="jugada" name="opcion2" value="0" id="armada"/>
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">Armada</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                            
+                                    <li>
+                                        <label class="item-radio item-radio-icon-end item-content">
+                                            <input type="radio" class="jugada" name="opcion2" value="X" id="X2" />
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">Tachar</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--POPUPTS-->
+        <div class="block-title"><h2 class="text-align-center encabezado"> EN JUEGO </h2></div>
+
+        <div class="block">   
+            <div class="row">
+                <div class="col-33 titulos"><p class="text-align-center">Puntajes</p></div>
+                <div class="col-33 titulos"><p class="text-align-center" id="n1">Jugador 1</p></div>
+                <div class="col-33 titulos"><p class="text-align-center" id="n2">Jugador 2</p></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33 titulos"><p class="text-align-center">Uno</p></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup" value="" id="J1_1" class="popup-open dedal" valorDedal="1">
+                    <input class="text-align-center numptos" placeholder="-" id="dtJ1_1"  ></input></a></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup" id="J2_1" class="popup-open dedal" valorDedal="1">
+                    <input class="text-align-center numptos" placeholder="-"  value="" id="dtJ2_1"  ></input></a></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33 titulos"><p class="text-align-center">Dos</p></input></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup" value="" id="J1_2" class="popup-open dedal" valorDedal="2">
+                    <input class="text-align-center numptos" placeholder="-"  id="dtJ1_2"></input></a></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup" id="J2_2" class="popup-open dedal" valorDedal="2">
+                    <input class="text-align-center numptos" placeholder="-" value=""id="dtJ2_2" ></input></a></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33 titulos"><p class="text-align-center">Tres</p></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup" value="" id="J1_3" class="popup-open dedal" valorDedal="3">
+                    <input class="text-align-center numptos" placeholder="-" id="dtJ1_3" ></input></a></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup" id="J2_3" class="popup-open dedal" valorDedal="3">
+                    <input class="text-align-center numptos" placeholder="-" value="" id="dtJ2_3"></input></a></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33 titulos"><p class="text-align-center">Cuatro</p></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup" id="J1_4" class="popup-open dedal" valorDedal="4">
+                    <input class="text-align-center numptos" placeholder="-" value="" id="dtJ1_4"></input></a></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup" id="J2_4"class="popup-open dedal" valorDedal="4">
+                    <input class="text-align-center numptos" placeholder="-" value="" id="dtJ2_4"></input></a></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33 titulos"><p class="text-align-center">Cinco</p></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup" id="J1_5" class="popup-open dedal" valorDedal="5">
+                    <input class="text-align-center numptos" placeholder="-" value="" id="dtJ1_5" ></input></a></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup" id="J2_5" class="popup-open dedal" valorDedal="5">
+                    <input class="text-align-center numptos" placeholder="-" value="" id="dtJ2_5"></input></a></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33 titulos"><p class="text-align-center">Seis</p></div>
+                <div class="col-33 puntaje" ><a href="#" data-popup=".my-popup" id="J1_6" class="popup-open dedal" valorDedal="6">
+                    <input class="text-align-center numptos" placeholder="-" value="" id="dtJ1_6"></input></a></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup" id="J2_6" class="popup-open dedal" valorDedal="6">
+                    <input class="text-align-center numptos" placeholder="-" value="" id="dtJ2_6"></input></a></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33 titulos"><p class="text-align-center">Escalera</p></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup2" id="J1_7" class="popup-open">
+                    <input class="text-align-center game numptos" placeholder="-"value="" id="dtJ1_7" valorBase="20"></input></a></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup2" id="J2_7" class="popup-open">
+                    <input class="text-align-center game numptos" placeholder="-" value="" id="dtJ2_7" valorBase="20"></input></a></div>
+            </div> 
+
+            <div class="row">
+                <div class="col-33 titulos"><p class="text-align-center">Full</p></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup2" id="J1_8" class="popup-open">
+                    <input class="text-align-center game numptos" placeholder="-"  value="" id="dtJ1_8" valorBase="30"></input></a></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup2" id="J2_8" class="popup-open">
+                    <input class="text-align-center game numptos" placeholder="-"  value="" id="dtJ2_8" valorBase="30"></input></a></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33 titulos"><p class="text-align-center">Poker</p></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup2" id="J1_9" class="popup-open">
+                    <input class="text-align-center game numptos" placeholder="-" value="" id="dtJ1_9" valorBase="40"></input></a></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup2" id="J2_9" class="popup-open">
+                    <input class="text-align-center game numptos" placeholder="-" value="" id="dtJ2_9" valorBase="40"></input></a></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33 titulos"><p class="text-align-center">Generala</p></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup2" id="J1_10" class="popup-open">
+                    <input class="text-align-center game numptos" placeholder="-" value="" id="dtJ1_10" valorBase="50"></input></a></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup2" id="J2_10" class="popup-open">
+                    <input class="text-align-center game numptos" placeholder="-" value="" id="dtJ2_10" valorBase="50"></input></a></div>
+            </div>
+
+            <div class="row">
+                <div class="col-33 titulos"><p class="text-align-center">Doble Generala</p></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup2" id="J1_11" class="popup-open">
+                    <input class="text-align-center game numptos" placeholder="-" value="" id="dtJ1_11" valorBase="100"></input></a></div>
+                <div class="col-33 puntaje"><a href="#" data-popup=".my-popup2" id="J2_11" class="popup-open">
+                    <input class="text-align-center game numptos" placeholder="-" value="" id="dtJ2_11" valorBase="100"></input></a></div>
+            </div>
+            <div class="row">
+                <div class="col-33 titulos espacio"><p class="text-align-center">TOTAL</p></div>
+                <div class="col-33 puntaje espacio">
+                    <input class="text-align-center numptos" placeholder="-" value="" id="totalj1" ></input></div>
+                <div class="col-33 puntaje espacio">
+                    <input class="text-align-center numptos" placeholder="-" value="" id="totalj2" ></input></div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="toolbar toolbar-bottom">
+        <div class="toolbar-inner">
+            <a href="index.html" id="btnTerminar" class="link">Terminar</a>
+            <a href="#" id="btnLimpiar" class="link">Limpiar</a>
+        </div>
+    </div>
+</div>
